@@ -5,6 +5,29 @@ I'm starting out with the Mobile first design, probably the way he wants us to d
 I found a PDF that has the most popular phones and their viewports. So we can go off of that for creating the mobile design. Its called "MG_PopularScreenResolutions_Graph-3.pdf".
 
 */
+
+@font-face {
+    font-family: "plexreg";
+    src: url("fonts/plexreg.ttf");
+}
+
+@font-face {
+    font-family: "plexmed";
+    src: url("fonts/plexmed.ttf");
+}
+
+@font-face {
+    font-family: "plexbold";
+    src: url("fonts/plexbold.ttf");
+}
+
+@font-face {
+    font-family: "plexmedi";
+    src: url("fonts/plexmedi.ttf");
+}
+
+/* Body -------------------------------------------- */
+
 *{
     margin: 0;
     padding: 0;

@@ -1,0 +1,49 @@
+html {
+    background-color: white;
+
+}
+
+@font-face {
+    font-family: plexreg;
+    src: url(fonts/plexreg.ttf);
+}
+
+@font-face {
+    font-family: plexmed;
+    src: url(fonts/plexmed.ttf);
+}
+
+@font-face {
+    font-family: plexbold;
+    src: url(fonts/plexbold.ttf);
+}
+
+@font-face {
+    font-family: "plexmedi";
+    src: url(fonts/plexmedi.ttf);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Body -------------------------------------------- */
+
+#logospace {
+    display: block;
+}
+
+#logospace img {
+    height: 100px;
+    margin-top: 50px;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    font-family: plexbold;
+}
