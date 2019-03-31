@@ -9,23 +9,23 @@ Bill pay will be ommited for now, I have no idea how we can really implement tha
 */
 
 @font-face {
-    font-family: "plexreg";
-    src: url("fonts/plexreg.ttf");
+    font-family: plexreg;
+    src: url(../fonts/plexreg.ttf);
 }
 
 @font-face {
     font-family: plexmed;
-    src: url(fonts/plexmed.ttf);
+    src: url(../fonts/plexmed.ttf);
 }
 
 @font-face {
     font-family: plexbold;
-    src: url(fonts/plexbold.ttf);
+    src: url(../fonts/plexbold.ttf);
 }
 
 @font-face {
     font-family: plexmedi;
-    src: url(fonts/plexmedi.ttf);
+    src: url(../fonts/plexmedi.ttf);
 }
 
 /* Body -------------------------------------------- */
@@ -110,7 +110,8 @@ li.active a { color: rgb(19, 161, 10); }
     align-self: center;
     justify-self: center;
     color: #000;
-    font-family: plexmedi; 
+    font-family: plexmedi;
+    font-size: 35px;
 }
 
 #phone {
@@ -125,6 +126,8 @@ li.active a { color: rgb(19, 161, 10); }
 #phone p {
     grid-column: 1;
     color: white;
+    font-family: plexreg, sans-serif;
+    font-size: 20px;
 }
 
 #phone #p2 {
@@ -288,8 +291,7 @@ li.active a { color: rgb(19, 161, 10); }
 #contact {
     grid-column: 1 / span 2;
     display: grid;
-
-    grid-template-rows: repeat(3, minmax(100px, auto)) 15px;;
+    grid-template-rows: repeat(3, minmax(100px, auto)) 5px;
     color: #000;
     background-color: #fff;
 }
@@ -310,8 +312,9 @@ li.active a { color: rgb(19, 161, 10); }
 #contact p {
     grid-row: 2;
     text-align: left;
-    margin-left: 100px;
-    
+    margin: 40px auto;
+    width: 40%;
+    font-family: plexreg, sans-serif;
 }
 
 #contact button {
@@ -330,8 +333,9 @@ li.active a { color: rgb(19, 161, 10); }
 #contact form {
     grid-column: 1 / span 2;
     display: grid;
+    grid-row-gap: 15px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(9, minmax(50px, auto));
+    grid-template-rows: repeat(6, minmax(50px, auto));
 }
 
 form #name1 {
@@ -341,12 +345,13 @@ form #name1 {
 
 input[type=text] {
     background-color: rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 30%;
     height: 40px;
     grid-column: 1 / span 2;
-    grid-row: 2;
+    grid-row: 1;
     justify-self: center;
     align-self: center;
+    font-family: plexreg, sans-serif;
 }
 
 form #email1 {
@@ -359,12 +364,13 @@ form #email1 {
 
 input[type=email] {
     grid-column: 1 / span 2;
-    grid-row: 4;
+    grid-row: 2;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 30%;
     height: 40px;
     justify-self: center;
     align-self: center;
+    font-family: plexreg, sans-serif;
 }
 
 form #cell {
@@ -377,12 +383,13 @@ form #cell {
 
 input[type=tel] {
     grid-column: 1 / span 2;
-    grid-row: 6;
+    grid-row: 3;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 30%;
     height: 40px;
     justify-self: center;
     align-self: center;
+    font-family: plexreg, sans-serif;
 }
 
 form #message1 {
@@ -395,22 +402,49 @@ form #message1 {
 
 form textarea {
     grid-column: 1 / span 2;
-    grid-row: 8;
+    grid-row: 4;
     height: 130px;
-    width: 80%;
-    margin: 8px;
+    width: 30%;
+    margin: 0;
     justify-self: center;
     align-self: center;
+    font-family: plexreg, sans-serif;
 }
 
 input[type=submit] {
-    grid-column: 2;
-    grid-row: 9;
+    grid-row: 5;
     background-color: rgba(0, 0, 0, 0.1);
     width: 30%;
+    height: 30px;
     justify-self: end;
     align-self: flex-end;
+    font-family: plexreg, sans-serif;
+    border-radius: 15px;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
 }
+
+#footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footer img {
+    height: 50px;
+    margin: 30px;
+}
+
+#footer p {
+    color: white;
+    grid-column: 2;
+    justify-self: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: plexreg, sans-serif;
+}
+
 
 @media only screen and (max-width: 712px) {
     #wrapper {
