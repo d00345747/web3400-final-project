@@ -59,6 +59,15 @@ Bill pay will be ommited for now, I have no idea how we can really implement tha
 #nav { 
     grid-column: 1 / span 2; 
     margin-top: 50px;
+    overflow: hidden;
+}
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 80%;
 }
 
 #menu {
@@ -469,6 +478,9 @@ input[type=text] {
     grid-row: 1;
     justify-self: center;
     align-self: center;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
     font-family: plexreg, sans-serif;
 }
 
@@ -488,6 +500,9 @@ input[type=email] {
     height: 40px;
     justify-self: center;
     align-self: center;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
     font-family: plexreg, sans-serif;
 }
 
@@ -507,6 +522,9 @@ input[type=tel] {
     height: 40px;
     justify-self: center;
     align-self: center;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
     font-family: plexreg, sans-serif;
 }
 
@@ -526,6 +544,9 @@ form textarea {
     margin: 0;
     justify-self: center;
     align-self: center;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
     font-family: plexreg, sans-serif;
 }
 
@@ -563,6 +584,12 @@ input[type=submit] {
     font-family: plexreg, sans-serif;
 }
 
+@media only screen and (max-width: 912px) {
+    #wrapper {
+        width: 100%;
+    }
+
+}
 
 @media only screen and (max-width: 712px) {
     #wrapper {
