@@ -54,6 +54,7 @@ Bill pay will be ommited for now, I have no idea how we can really implement tha
     /* margin-top: 30px; */
     grid-column: 1;
     grid-row: 1;
+    margin-bottom: 30px;
 }
 
 #nav { 
@@ -153,7 +154,7 @@ li.active a { color: rgb(19, 161, 10); }
 
 #phone button {
     grid-column: 2;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
     width: 250px;
     height: 75px;
     justify-self: center;
@@ -162,6 +163,8 @@ li.active a { color: rgb(19, 161, 10); }
     border: none;
     background-color: #fff;
     font-size: 18px;
+    cursor: pointer;
+
 }
 
 #body {
@@ -184,12 +187,15 @@ li.active a { color: rgb(19, 161, 10); }
     font-family: plexmed, sans-serif;
 }
 
+
+
 #body #installations {
     grid-column: 1;
     grid-row: 2;
     font-size: 24px;
     margin-left: 100px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #picture1 {
@@ -211,9 +217,10 @@ li.active a { color: rgb(19, 161, 10); }
     grid-column: 2;
     grid-row: 4;
     font-size: 24px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #repairs {
@@ -221,61 +228,63 @@ li.active a { color: rgb(19, 161, 10); }
     grid-row: 4;
     font-family: plexreg, sans-serif;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 #body #wrenchpic {
     grid-column: 1;
     grid-row: 3;
-    height: 250px;
+    height: 300px;
     margin: auto;
 }
 
 #body #remodel {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 5;
     font-size: 24px;
     margin-left: 100px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #remodels {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 5;
     font-family: plexreg, sans-serif;
     margin-top: 50px;
     margin-left: 100px;
 }
 
 #body #ComRepair {
-    grid-column: 1;
-    grid-row: 5;
+    grid-column: 2;
+    grid-row: 6;
     font-size: 24px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #commercial {
-    grid-column: 1;
-    grid-row: 5;
+    grid-column: 2;
+    grid-row: 6;
     font-family: plexreg, sans-serif;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 #tubfaucet {
     grid-column: 2;
     grid-row: 5;
-    height: 250px;
+    height: 300px;
     margin: auto;
 }
 
 #nobpic {
     grid: 1/3;
     grid-row: 6;
-    height: 350px;
+    height: 300px;
     margin: auto;
     margin-bottom: 30px;
 }
@@ -677,12 +686,9 @@ input[type=submit] {
         grid-column: 2;
         background-image: url("../images/picture1.png");
         background-repeat: no-repeat;
-        background-size: 200px;
-        height: 150px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
+        background-size: contain;
+        height: 200px;
+        margin: 15px 0 15px 25px;
     }
 
     #hero p {
@@ -699,6 +705,7 @@ input[type=submit] {
         display: grid;
         grid-template-columns: 50% 50%;
         background-color: #ed1c24;
+        padding: 50px;
     }
 
     #phone p {
@@ -713,16 +720,19 @@ input[type=submit] {
         font-size: 1.5em;
     }
 
-    #phone button {
+    #phone a {
         grid-column: 2;
         grid-row: 1 / span 3;
-        width: 150px;
-        height: 45px;
         justify-self: center;
         align-self: center;
+    }
+
+    #phone button {
+        width: 150px;
+        height: 45px;
         border-radius: 50px;
         border: none;
-        background-color: #fff
+        background-color: #fff;
     }
 
     #body {
@@ -771,6 +781,10 @@ input[type=submit] {
         grid-row: 3;
         justify-self: center;
         margin-top: 110px;
+    }
+
+    #body #wrenchpic {
+        height: 200px;
     }
 
     #body #picture1 {
@@ -823,6 +837,7 @@ input[type=submit] {
         grid-column: 2;
         grid-row: 4;
         margin: 0;
+        height: 150px;
         justify-self: center;
         align-self: center;
     }
@@ -862,10 +877,10 @@ input[type=submit] {
         align-self: center;
     }
 
-    #aboutus #picture3 {
+    #aboutus #pictureofclient {
         grid-column: 1;
         grid-row: 2 / span 2;
-        background-image: url("../images/picture4.png");
+        background-image: url("");
         background-repeat: no-repeat;
         background-size: contain;
         height: 150px;
@@ -899,10 +914,13 @@ input[type=submit] {
     }
 
     #contact p {
-        grid-column: 1;
+        grid-column: span 2;
         grid-row: 2;
         text-align: left;
         margin: 4px;
+        width: 50%;
+        justify-self: center;
+        align-self: center;
     }
 
     #contact button {
@@ -922,38 +940,38 @@ input[type=submit] {
         grid-column: 1 / span 2;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(9, minmax(50px, auto));
+        grid-template-rows: repeat(5, minmax(50px, auto));
     }
 
-    form #name1 {
+    /* form #name1 {
         grid-column: 1;
         grid-row: 1;
         font-size: 1.3em;
         justify-self: center;
         align-self: center;
-    }
+    } */
 
     input[type=text] {
         background-color: rgba(0, 0, 0, 0.1);
         width: 80%;
         height: 40px;
         grid-column: 1 / span 2;
-        grid-row: 2;
+        grid-row: 1;
         justify-self: center;
         align-self: center;
     }
 
-    form #email1 {
+    /* form #email1 {
         grid-column: 1;
         grid-row: 3;
         font-size: 1.3em;
         justify-self: center;
         align-self: center;
-    }
+    } */
 
     input[type=email] {
         grid-column: 1 / span 2;
-        grid-row: 4;
+        grid-row: 2;
         background-color: rgba(0, 0, 0, 0.1);
         width: 80%;
         height: 40px;
@@ -961,17 +979,17 @@ input[type=submit] {
         align-self: center;
     }
 
-    form #cell {
+    /* form #cell {
         grid-column: 1;
         grid-row: 5;
         font-size: 1.3em;
         justify-self: center;
         align-self: center;
-    }
+    } */
 
     input[type=tel] {
         grid-column: 1 / span 2;
-        grid-row: 6;
+        grid-row: 3;
         background-color: rgba(0, 0, 0, 0.1);
         width: 80%;
         height: 40px;
@@ -979,17 +997,17 @@ input[type=submit] {
         align-self: center;
     }
 
-    form #message1 {
+    /* form #message1 {
         grid-column: 1;
         grid-row: 7;
         font-size: 1.3em;
         justify-self: center;
         align-self: center;
-    }
+    } */
 
     form textarea {
         grid-column: 1 / span 2;
-        grid-row: 8;
+        grid-row: 4;
         height: 130px;
         width: 80%;
         margin: 8px;
@@ -999,7 +1017,7 @@ input[type=submit] {
 
     input[type=submit] {
         grid-column: 2;
-        grid-row: 9;
+        grid-row: 5;
         background-color: rgba(0, 0, 0, 0.1);
         width: 30%;
         justify-self: end;
