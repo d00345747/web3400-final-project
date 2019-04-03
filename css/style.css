@@ -187,6 +187,8 @@ li.active a { color: rgb(19, 161, 10); }
     font-family: plexmed, sans-serif;
 }
 
+
+
 #body #installations {
     grid-column: 1;
     grid-row: 2;
@@ -215,7 +217,7 @@ li.active a { color: rgb(19, 161, 10); }
     grid-column: 2;
     grid-row: 4;
     font-size: 24px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
     text-decoration: underline;
@@ -226,13 +228,13 @@ li.active a { color: rgb(19, 161, 10); }
     grid-row: 4;
     font-family: plexreg, sans-serif;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 #body #wrenchpic {
     grid-column: 1;
     grid-row: 3;
-    height: 250px;
+    height: 300px;
     margin: auto;
 }
 
@@ -258,7 +260,7 @@ li.active a { color: rgb(19, 161, 10); }
     grid-column: 2;
     grid-row: 6;
     font-size: 24px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
     text-decoration: underline;
@@ -269,20 +271,20 @@ li.active a { color: rgb(19, 161, 10); }
     grid-row: 6;
     font-family: plexreg, sans-serif;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 #tubfaucet {
     grid-column: 2;
     grid-row: 5;
-    height: 250px;
+    height: 300px;
     margin: auto;
 }
 
 #nobpic {
     grid: 1/3;
     grid-row: 6;
-    height: 350px;
+    height: 300px;
     margin: auto;
     margin-bottom: 30px;
 }
