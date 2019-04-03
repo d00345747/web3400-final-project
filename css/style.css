@@ -54,6 +54,7 @@ Bill pay will be ommited for now, I have no idea how we can really implement tha
     /* margin-top: 30px; */
     grid-column: 1;
     grid-row: 1;
+    margin-bottom: 30px;
 }
 
 #nav { 
@@ -153,7 +154,7 @@ li.active a { color: rgb(19, 161, 10); }
 
 #phone button {
     grid-column: 2;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
     width: 250px;
     height: 75px;
     justify-self: center;
@@ -192,6 +193,7 @@ li.active a { color: rgb(19, 161, 10); }
     font-size: 24px;
     margin-left: 100px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #picture1 {
@@ -216,6 +218,7 @@ li.active a { color: rgb(19, 161, 10); }
     margin-left: 100px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #repairs {
@@ -235,33 +238,35 @@ li.active a { color: rgb(19, 161, 10); }
 
 #body #remodel {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 5;
     font-size: 24px;
     margin-left: 100px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #remodels {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 5;
     font-family: plexreg, sans-serif;
     margin-top: 50px;
     margin-left: 100px;
 }
 
 #body #ComRepair {
-    grid-column: 1;
-    grid-row: 5;
+    grid-column: 2;
+    grid-row: 6;
     font-size: 24px;
     margin-left: 100px;
     margin-top: 20px;
     font-family: plexreg, sans-serif;
+    text-decoration: underline;
 }
 
 #body #commercial {
-    grid-column: 1;
-    grid-row: 5;
+    grid-column: 2;
+    grid-row: 6;
     font-family: plexreg, sans-serif;
     margin-top: 50px;
     margin-left: 100px;
