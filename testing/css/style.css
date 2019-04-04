@@ -171,7 +171,7 @@ li.active a { color: rgb(19, 161, 10); }
     display: grid;
     grid-column: span 2;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: minmax(200px, 250px)repeat(9, 1fr);
     height: 1500px;
     background-color: black;
     color: white;
@@ -192,6 +192,7 @@ li.active a { color: rgb(19, 161, 10); }
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 #body #installations {
