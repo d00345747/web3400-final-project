@@ -38,6 +38,7 @@ Bill pay will be ommited for now, I have no idea how we can really implement tha
 #wrapper {
     width: 80%;
     margin: 0 auto;
+    background-color: #000; 
 }
 
 #head {
@@ -93,7 +94,7 @@ li a {
 
 li a:hover { background-color: #ed1c24; }
 
-li.active a { color: rgb(19, 161, 10); }
+/* li.active a { color: rgb(19, 161, 10); } */
 
 #hero {
     grid-column: 1 / span 2;
@@ -541,6 +542,8 @@ input[type=text] {
     border-color: black;
     border-width: 1px;
     font-family: plexreg, sans-serif;
+    padding: 5px;
+    font-size: 1.2em;
 }
 
 form #email1 {
@@ -563,6 +566,8 @@ input[type=email] {
     border-color: black;
     border-width: 1px;
     font-family: plexreg, sans-serif;
+    padding: 5px;
+    font-size: 1.2em;
 }
 
 form #cell {
@@ -585,6 +590,8 @@ input[type=tel] {
     border-color: black;
     border-width: 1px;
     font-family: plexreg, sans-serif;
+    padding: 5px;
+    font-size: 1.2em;
 }
 
 form #message1 {
@@ -607,6 +614,8 @@ form textarea {
     border-color: black;
     border-width: 1px;
     font-family: plexreg, sans-serif;
+    padding: 5px;
+    font-size: 1.2em;
 }
 
 input[type=submit] {
@@ -621,6 +630,7 @@ input[type=submit] {
     background-color: white;
     border-color: black;
     border-width: 1px;
+    margin: 5px;
 }
 
 #footer {
@@ -723,7 +733,7 @@ input[type=submit] {
 
     li a:hover { background-color: #ed1c24; }
 
-    li.active a { color: rgb(19, 161, 10); }
+    /* li.active a { color: rgb(19, 161, 10); } */
 
     #hero {
         grid-column: 1 / span 2;
@@ -1078,4 +1088,141 @@ input[type=submit] {
         grid-column: 1 / span 2;
     }
 
+}
+
+@media only screen and (max-width: 360px) {
+
+    #wrapper {
+        display: block;
+    }
+
+    #hero {
+        display: block;
+    }
+
+    #hero p {
+        margin: 0;
+        padding: 5px;
+    }
+
+    #hero #heroPic {
+        margin: 0 0 0 20px;
+        padding: 5px 5px 5px 10px;
+    }
+
+    #phone {
+        display: block;
+        padding: 25px;
+    }
+
+    #body {
+        display: block;
+    }
+
+    #body div {
+        margin: auto;
+    }
+
+    #body h2 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    #body #installations {
+        margin: 0;
+    }
+
+    #body #installs {
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+
+    #InstallDiv {
+        display: block;
+    }
+
+    #body #remodel {
+        margin: 0;
+    }
+
+    #body #remodels {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    #tubfaucet {
+        margin: 20px;
+    }
+
+    #RemodelDiv {
+        display: block;
+    }
+
+    #body #reps {
+        margin: 0;
+    }
+
+    #body #repairs {
+        margin-top: 10px;
+    }
+
+    #body #wrenchpic {
+        margin: 20px;
+    }
+
+    #RepairDiv {
+        display: block;
+    }
+
+    #body #ComRepair {
+        margin: 0;
+    }
+
+    #body #commercial {
+        margin-top: 10px;
+    }
+
+    #nobpic {
+        margin: 20px;
+        height: 150px;
+    }
+
+    #CommercialDiv {
+        display: block;
+        margin: 0;
+    }
+
+    #aboutus {
+        display: block;
+    }
+
+    #aboutus h2 {
+        margin: 0;
+    }
+
+    #aboutus p {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #aboutus #pictureofclient {
+        margin: 0;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    #contact #cont {
+        margin: 0;
+        padding: 5px;
+    }
+
+    #contact p {
+        width: 95%;
+        margin: 0;
+        padding: 10px;
+        font-size: 1.2em;
+    }
 }
