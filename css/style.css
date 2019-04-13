@@ -670,6 +670,7 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 712px) {
+
     #wrapper {
         display: grid;
         grid-gap: 0;
@@ -684,22 +685,17 @@ input[type=submit] {
 
     #head {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr;
         grid-column: 1 / span 2;
         color: #000;
         background-color: #fff;
     }
 
-    #head #logo {
-        background-image: url("../images/logo_icon.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 40px;
-        margin-top: 20px;
-        margin-left: 100px;
-        grid-column: 1;
-        grid-row: 1;
-    }
+   #head img {
+       margin: auto;
+       margin-top: 20px;
+       margin-bottom: 20px;
+   }
 
     #head h1 {
         grid-column: 1; 
@@ -738,17 +734,18 @@ input[type=submit] {
     #hero {
         grid-column: 1 / span 2;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr;
         background-color: #fff;
     }
 
     #hero #heroPic {
-        grid-column: 2;
-        background-image: url("../images/picture1.png");
+        grid-column: 1;
+        grid-row: 2;
+        background-image: url("../images/vanhero.png");
         background-repeat: no-repeat;
         background-size: contain;
         height: 200px;
-        margin: 15px 0 15px 25px;
+        margin: 10px 10px;
     }
 
     #hero p {
@@ -763,7 +760,8 @@ input[type=submit] {
         grid-column: 1 / span 2;
         font-size: 1em;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         background-color: #ed1c24;
         padding: 50px;
     }
@@ -781,8 +779,8 @@ input[type=submit] {
     }
 
     #phone a {
-        grid-column: 2;
-        grid-row: 1 / span 3;
+        grid-column: 1;
+        grid-row: 2;
         justify-self: center;
         align-self: center;
     }
@@ -793,6 +791,8 @@ input[type=submit] {
         border-radius: 50px;
         border: none;
         background-color: #fff;
+        grid-column: 1;
+        grid-row: 3;
     }
 
     #body {
@@ -914,21 +914,22 @@ input[type=submit] {
     #aboutus {
         grid-column: 1 / span 2;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, minmax(100px, auto));
         background-color: #ed1c24;
     }
 
     #aboutus h2 {
         grid-column: 1;
+        grid-row: 1;
         font-size: 1.8em;
         padding: 5px;
-        justify-self: center;
+        justify-self: start;
         align-self: center;
     }
 
     #aboutus p {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 2 ;
         font-size: 1em;
         padding: 5px;
