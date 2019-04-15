@@ -172,7 +172,7 @@ li a:hover { background-color: #ed1c24; }
     display: grid;
     grid-column: span 2;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(200px, 250px)repeat(4, 1fr);
+    grid-template-rows: minmax(100px, 150px)repeat(4, 1fr);
     background-color: black;
     color: white;
 }
@@ -191,8 +191,9 @@ li a:hover { background-color: #ed1c24; }
     color: black;
     background-color: white;
     width: 80%;
-    margin: auto;
-    margin-bottom: 30px;
+    height: 300px;
+    margin: 20px auto 30px auto;
+    /* margin-bottom: 30px; */
 }
 
 
@@ -532,7 +533,7 @@ form #name1 {
 
 input[type=text] {
     background-color: rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 50%;
     height: 40px;
     grid-column: 1 / span 2;
     grid-row: 1;
@@ -558,7 +559,7 @@ input[type=email] {
     grid-column: 1 / span 2;
     grid-row: 2;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 50%;
     height: 40px;
     justify-self: center;
     align-self: center;
@@ -582,7 +583,7 @@ input[type=tel] {
     grid-column: 1 / span 2;
     grid-row: 3;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 50%;
     height: 40px;
     justify-self: center;
     align-self: center;
@@ -606,7 +607,7 @@ form textarea {
     grid-column: 1 / span 2;
     grid-row: 4;
     height: 130px;
-    width: 30%;
+    width: 50%;
     margin: 0;
     justify-self: center;
     align-self: center;
@@ -665,6 +666,22 @@ input[type=submit] {
 
     #tubfaucet {
         height: 200px;
+    }
+
+    input[type=text] {
+        width: 30%;
+    }
+
+    input[type=email] {
+        width: 30%;
+    }
+
+    input[type=tel] {
+        width: 30%;
+    }
+
+    form textarea {
+        width: 30%;
     }
 
 }
