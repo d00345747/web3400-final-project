@@ -75,7 +75,7 @@ Bill pay will be ommited for now, I have no idea how we can really implement tha
 #menu {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50px;
     background-color: rgba(0, 0, 0, 1);
     font-family: plexbold;
@@ -123,7 +123,7 @@ li a:hover { background-color: #ed1c24; }
 
 #hero p {
     font-size: 1.5em;
-    margin: 5px;
+    margin: 20px;
     padding-right: 20px;
     align-self: center;
     justify-self: center;
@@ -484,6 +484,7 @@ li a:hover { background-color: #ed1c24; }
 
 #aboutus h2 {
     grid-column: 1;
+    grid-row: 1;
     font-size: 1.8em;
     padding: 5px;
     margin-left: 100px;
@@ -540,8 +541,9 @@ li a:hover { background-color: #ed1c24; }
 #contact p {
     grid-row: 2;
     text-align: left;
-    margin: 40px auto;
+    margin: 40px 0 40px 100px;
     width: 40%;
+    font-size: 1.3em;
     font-family: plexreg, sans-serif;
 }
 
@@ -573,9 +575,10 @@ form #name1 {
 
 input[type=text] {
     background-color: rgba(0, 0, 0, 0.1);
-    width: 50%;
+    width: 75%;
+    margin-left: 85px;
     height: 40px;
-    grid-column: 1 / span 2;
+    grid-column: 1;
     grid-row: 1;
     justify-self: center;
     align-self: center;
@@ -596,11 +599,12 @@ form #email1 {
 }
 
 input[type=email] {
-    grid-column: 1 / span 2;
     grid-row: 2;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 50%;
+    width: 75%;
+    margin-left: 85px;
     height: 40px;
+    grid-column: 1;
     justify-self: center;
     align-self: center;
     background-color: white;
@@ -620,11 +624,12 @@ form #cell {
 }
 
 input[type=tel] {
-    grid-column: 1 / span 2;
     grid-row: 3;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 50%;
+    width: 75%;
+    margin-left: 85px;
     height: 40px;
+    grid-column: 1;
     justify-self: center;
     align-self: center;
     background-color: white;
@@ -644,11 +649,11 @@ form #message1 {
 }
 
 form textarea {
-    grid-column: 1 / span 2;
     grid-row: 4;
     height: 130px;
-    width: 50%;
-    margin: 0;
+    width: 75%;
+    margin-left: 85px;
+    grid-column: 1;
     justify-self: center;
     align-self: center;
     background-color: white;
@@ -671,7 +676,7 @@ input[type=submit] {
     background-color: white;
     border-color: black;
     border-width: 1px;
-    margin: 5px;
+    margin: 5px 13px 5px 5px;
 }
 
 #footer {
@@ -709,19 +714,27 @@ input[type=submit] {
     }
 
     input[type=text] {
-        width: 30%;
+        width: 75%;
+        margin-left: 100px;
     }
 
     input[type=email] {
-        width: 30%;
+        width: 75%;
+        margin-left: 100px;
     }
 
     input[type=tel] {
-        width: 30%;
+        width: 75%;
+        margin-left: 100px;
     }
 
     form textarea {
-        width: 30%;
+        width: 75%;
+        margin-left: 100px;
+    }
+
+    input[type=submit] {
+        margin: 5px;
     }
 
 }
@@ -768,7 +781,7 @@ input[type=submit] {
     #menu {
         list-style-type: none;
         display: grid;
-        grid-template-columns: 33.333% 33.333% 33.333%;
+        grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 100px;
         background-color: rgba(0, 0, 0, 1);
         font-size: 1.5em;
@@ -848,8 +861,13 @@ input[type=submit] {
         border-radius: 50px;
         border: none;
         background-color: #fff;
+    }
+
+    #phone #secureMessage {
         grid-column: 1;
         grid-row: 3;
+        justify-self: center;
+        align-self: center;
     }
 
     #body {
@@ -877,7 +895,7 @@ input[type=submit] {
     }
 
     #body ul.services {
-        list-style-type: circle;
+        list-style-type: square;
         font-size: 1em;
         text-align: left;
     }
@@ -1152,6 +1170,15 @@ input[type=submit] {
 
     #wrapper {
         display: block;
+        margin: 0;
+    }
+    
+    #menu {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+
+    #menu li#about {
+        display: none;
     }
 
     #hero {
@@ -1176,6 +1203,10 @@ input[type=submit] {
     #body {
         display: block;
     }
+    
+    #body ul.services {
+        list-style-type: none;
+    }
 
     #body div {
         margin: auto;
@@ -1195,6 +1226,10 @@ input[type=submit] {
         margin-left: 50px;
     }
 
+    #body #picture1 {
+        height: 150px;
+    }
+
     #InstallDiv {
         display: block;
     }
@@ -1204,8 +1239,9 @@ input[type=submit] {
     }
 
     #body #remodels {
+        width: 50%;
         margin-top: 10px;
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     #tubfaucet {
@@ -1217,15 +1253,19 @@ input[type=submit] {
     }
 
     #body #reps {
-        margin: 0;
+        margin: auto;
+        width: 50%;
     }
 
     #body #repairs {
         margin-top: 10px;
+        margin-left: 100px;
+        margin-right: 0;
     }
 
     #body #wrenchpic {
         margin: 20px;
+        height: 150px;
     }
 
     #RepairDiv {
@@ -1238,6 +1278,7 @@ input[type=submit] {
 
     #body #commercial {
         margin-top: 10px;
+        margin-bottom: 0;
     }
 
     #nobpic {
@@ -1282,5 +1323,29 @@ input[type=submit] {
         margin: 0;
         padding: 10px;
         font-size: 1.2em;
+    }
+
+    input[type=text] {
+        width: 90%;
+        margin: 3px;
+    }
+
+    input[type=email] {
+        width: 90%;
+        margin: 3px;
+    }
+
+    input[type=tel] {
+        width: 90%;
+        margin: 3px;
+    }
+
+    form textarea {
+        width: 90%;
+        margin: 3px;
+    }
+
+    input[type=submit] {
+        margin-right: 10px;
     }
 }
