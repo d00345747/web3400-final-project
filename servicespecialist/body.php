@@ -1,5 +1,5 @@
 			<div id="body">
-                <a name="serviceanchor"></a>
+                <a id="serviceanchor"></a>
                 <h2>Services</h2>
                 <div id="InstallDiv">
                     <h4 id="installations">Installations</h4>
