@@ -2,9 +2,9 @@ window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("nav");
 var sticky = navbar.offsetTop;
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= 50) {
     navbar.classList.add("sticky")
-  } else {
+  }else {
     navbar.classList.remove("sticky");
   }
 }

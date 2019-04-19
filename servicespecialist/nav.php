@@ -1,4 +1,5 @@
 			<div id="nav">
+                <img id="logo" src="../images/ServspecLogoWhite.png" alt="Service Specialist">
                 <ul id="menu">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#serviceanchor">Services</a></li>
