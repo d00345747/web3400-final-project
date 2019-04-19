@@ -104,24 +104,26 @@ li a:hover { background-color: #ed1c24; }
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #fff;
-    /* background-image: url('../images/house2.jpg');
+    background-image: url('../images/house2.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: right;
     height: 400px;
-    align-self: flex-end; */
     /* Don't know how to to implement this picture yet.... work in progress... */
 }
 
 #hero #heroPic {
     grid-column: 2;
+    grid-row: 2;
     background-image: url("../images/vanhero.png");
     background-repeat: no-repeat;
     background-size: 500px;
     height: 300px;
-    margin-top: 80px;
-    margin-bottom: 80px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    align-self: end;
 }
 
 #hero p {
@@ -130,7 +132,9 @@ li a:hover { background-color: #ed1c24; }
     padding-right: 20px;
     align-self: center;
     justify-self: center;
-    color: #000;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-width: 1px;
     font-family: plexmedi;
     font-size: 40px;
 }
