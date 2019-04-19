@@ -35,6 +35,10 @@ Bill pay will be ommited for now, I have no idea how we can really implement tha
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #wrapper {
     width: 80%;
     margin: 0 auto;
@@ -89,7 +93,6 @@ li a {
     color: #fff;
     justify-items: center;
     align-items: center;
-    
 }
 
 li a:hover { background-color: #ed1c24; }
