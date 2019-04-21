@@ -74,6 +74,7 @@ html {
 #nav #logo {
     background-size: contain;
     height: 100px;
+    margin: 30px;
     grid-column: 1;
 }
 
