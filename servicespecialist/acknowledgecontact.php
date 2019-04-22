@@ -1,11 +1,11 @@
 <?php
 if (isset($_POST['send'])){
     $to = '1@eliottorr.com'; //going to me for testing, production will be servspec@infowest.com
-    $subject = 'Message from ServiceSpecialistplumbing.com'
+    $subject = 'Message from ServiceSpecialistplumbing.com';
     $message = 'Name: ' .$_POST['name']. "r/n/r/n";
-    $message = 'Email: ' .$_POST['email'] "r/n/r/n";
-    $message = 'Phone Number: ' .$_POST['celnumber'] "r/n/r/n";
-    $message = 'Message: ' .$_POST['messagearea'] "r/n/r/n";
+    $message = 'Email: ' .$_POST['email']. "r/n/r/n";
+    $message = 'Phone Number: ' .$_POST['celnumber']."r/n/r/n";
+    $message = 'Message: ' .$_POST['messagearea']. "r/n/r/n";
     $headers = "From: webmaster@servicespecialistplumbing.com\r\n";
     $headers = 'Content-Type: text/plain; charset=utf-8';
 
